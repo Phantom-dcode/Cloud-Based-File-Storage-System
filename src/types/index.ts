@@ -2,11 +2,13 @@ export type FileCategory = 'image' | 'document' | 'video' | 'audio' | 'archive' 
 
 export interface FileVersion {
   versionId: string;
+  fileId?: string;
   versionNumber: number;
   fileName: string;
   size: number;
   mimeType: string;
   s3Key: string;
+  storageType?: 's3' | 'local';
   blobUrl?: string;
   createdAt: string;
   uploadedBy: string;
@@ -24,6 +26,7 @@ export interface FileItem {
   category: FileCategory;
   size: number; // in bytes
   s3Key: string;
+  storageType?: 's3' | 'local';
   blobUrl?: string;
   textContent?: string; // For text/code preview if applicable
   isPublic: boolean;
