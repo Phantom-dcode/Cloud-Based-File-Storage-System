@@ -1,0 +1,6 @@
+{
+  "name": "CloudVault",
+  "description": "A production-ready Cloud-Based File Storage System similar to Google Drive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
